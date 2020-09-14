@@ -16,7 +16,7 @@ Création table :
         nom text)
     """)
 
-Envoie de donnée :
+Envoi de donnée :
 
     d = {"prenom": "Patrick", "nom": "Chirac"}
     c.execute("INSERT INTO employees VALUES (:prenom, :nom)", d)
