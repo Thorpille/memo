@@ -30,11 +30,3 @@ ou
     d = {"prenom": "Pierre"}
     c.execute("SELECT * FROM employes WHERE prenom =:a", d)
     donnees = c.fetchall()
-
-Récupérer tout les éléments du SELECT
-
-    fetchall() 
-
-Récupérer un seul élément (celui suivant le curseur)
-
-    fetchone() 
