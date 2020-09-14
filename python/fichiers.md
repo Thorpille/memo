@@ -9,7 +9,7 @@ Lecture :
 
 Ecriture:
 
-    with open(chemin, "w") as f
+    with open(chemin, "w") as f:
         f.write("Bonjour")
 
 ### Fichier .json
