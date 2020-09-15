@@ -9,7 +9,7 @@ Lecture :
 
 Ecriture :
 
-    with open(fichier, "w", encoding = "utf-8") as f:
+    with open(fichier, "w") as f:
         json.dump(settings, f, indent=4)
 
 ### Fichier .txt
@@ -21,7 +21,7 @@ Lecture :
 
 Ecriture:
 
-    with open(chemin, "w") as f:
+    with open(chemin, "w", encoding = "utf-8") as f:
         f.write("Bonjour")
 
     f.readlines()
