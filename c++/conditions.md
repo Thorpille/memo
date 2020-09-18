@@ -12,6 +12,8 @@
         Mon code;
     }
     
+### Opérateurs :
+
     || = ou
     && = et
     ! = not   if(!(ma condition))
