@@ -5,4 +5,4 @@
 * [Modules](modules.md)
 * [Les listes](listes.md)
 * [Les dictionnaires](dictionnaires.md)
-* [Conditions] (conditions.md)
+* [Conditions](conditions.md)
