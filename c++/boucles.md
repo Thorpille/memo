@@ -4,4 +4,4 @@
     }
 
     do{
-    }while(condition)
+    }while(condition);      Attention à la virgule !
