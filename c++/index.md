@@ -1,5 +1,5 @@
 # C++
 
-* [Les variables](variables)
-* [Les conditions](conditions)
-* [Divers](divers)
+* [Les variables](variables.md)
+* [Les conditions](conditions.md)
+* [Divers](divers.md)
