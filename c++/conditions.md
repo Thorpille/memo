@@ -14,3 +14,4 @@
     
     || = ou
     && = et
+    ! = not   if(!(ma condition))
