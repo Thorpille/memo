@@ -1,7 +1,7 @@
 # les boucles
 
-wile(condition){
-}
+    while(condition){
+    }
 
-do{
-}while(condition)
+    do{
+    }while(condition)
