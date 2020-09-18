@@ -1,5 +1,4 @@
 # Index
 * [Python](python/index.md)
 * [C++](c++/index.md)
-
-<h1>Un deuxième titre</h1>
+* [Caractères spéciaux](caracteres_speciaux.md)
