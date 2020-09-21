@@ -26,7 +26,7 @@ int var1{12}, var2{23};
 
 ### Pour convertir d'un type à un autre :
 
-static_cast<int>(nombreAVirgule)
+    static_cast<int>(nombreAVirgule)
 
 ## Variables spéciales
 
@@ -39,7 +39,7 @@ maReference est égale à maVariable (Meme emplacement mémoire)
 
 &maVariable renvoie l"adresse mémoire dans laquelle est stockée maVariable
 
-    int \*monPointeur{&maVariable}
+    int *monPointeur{&maVariable}
 monPointeur contient l'adresse mémoire de maVariable
 
 \*monpointeur renvoie la valeur de maVariable
