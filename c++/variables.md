@@ -28,8 +28,18 @@ int var1{12}, var2{23};
 
 static_cast<int>(nombreAVirgule)
 
-## Les références
+## Variables spéciales
+
+### Les références
 
     int& maReference{maVariable} 
 maReference est égale à maVariable (Meme emplacement mémoire)
 
+### Les pointeurs
+
+&maVariable renvoie l"adresse mémoire dans laquelle est stockée maVariable
+
+    int \*monPointeur{&maVariable}
+monPointeur contient l'adresse mémoire de maVariable
+
+\*monpointeur renvoie la valeur de maVariable
