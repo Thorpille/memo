@@ -1,6 +1,6 @@
 # Les variables
 
-### Les types de variables
+## Les types de variables
 
 * **int      petit nombre entier**
 * long_int ou long    grand nombre entier
@@ -30,5 +30,6 @@ static_cast<int>(nombreAVirgule)
 
 ## Les références
 
-int& maReference{maVariable} maReference est égale à maVariable (Meme emplacement mémoire)
+    int& maReference{maVariable} 
+maReference est égale à maVariable (Meme emplacement mémoire)
 
