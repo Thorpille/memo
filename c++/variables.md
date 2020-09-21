@@ -28,4 +28,7 @@ int var1{12}, var2{23};
 
 static_cast<int>(nombreAVirgule)
 
-# Les références
+## Les références
+
+int& maReference{maVariable} maReference est égale à maVariable (Meme emplacement mémoire)
+
