@@ -1,3 +1,3 @@
 # Index Javascript
 
-* Les variables
+* [Les variables](variables)
