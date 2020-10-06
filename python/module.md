@@ -18,3 +18,6 @@
     
 ### shutil :
     shutil.move(fichier, dossier)
+### datetime
+
+https://strftime.org/
