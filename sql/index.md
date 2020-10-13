@@ -23,5 +23,22 @@ Null
     SELECT prenom FROM employe WHERE ISNULL(service)
     SELECT prenom FROM employe WHERE NOT ISNULL(service)
     
-WHERE truc != "machaine"
+    WHERE truc != "machine"
 Filtre aussi les valeurs NULL
+
+    SELECT table FROM BASE WHERE salaire BETWEEN 10000 AND 15000
+Les valeurs indiquées sont comprises
+
+    SELECT table FROM BASE WHERE salaire BETWEEN 10000 AND 15000
+    
+Pour chercher une ou des valeurs exacts :
+
+    SELECT table FROM base WHERE salaire IN (10000, 20000)
+    
+    SELECT nom, prenom FROM table WHERE nom LIKE 'D%'
+Renvoi tout les noms commencant par un D
+
+    SELECT nom, prenom FROM table WHERE nom LIKE 'D____'
+REnvoi les nom, prenom des noms commencant par un D suivi de 4 lettres
+
+    -- Un petit commentaire après deux tirets (ou /*puis */)
