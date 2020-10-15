@@ -42,3 +42,25 @@ Renvoi tout les noms commencant par un D
 REnvoi les nom, prenom des noms commencant par un D suivi de 4 lettres
 
     -- Un petit commentaire après deux tirets (ou /*puis */)
+    
+Opérateurs logiques :
+
+    AND
+    OR
+    IS NOT NULL
+    SELECT CONCAT(nom, ' ', prenom) FROM employe
+
+Alias de colonne:
+
+    SELECT CONCAT(nom, ' ', prenom) AS nomComplet FROM employe
+    SELECT CONCAT(nom, ' ', prenom) nomComplet FROM employe
+
+WHERE executée au moment de l'entrée dans la requéte, avant la création des alias
+
+    SELECT CONCAT(nom, ' ', prenom) AS nomComplet FROM employe Having nomComplet LIKE 'DU%'
+    
+Having , tri effectué après la création des alias
+
+    Order BY nom, prenom ordre croissant sur le nom puis le prenom
+    ORDER BY nom DESC oredre décroissant
+    
