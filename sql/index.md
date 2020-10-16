@@ -63,4 +63,48 @@ Having , tri effectué après la création des alias
 
     Order BY nom, prenom ordre croissant sur le nom puis le prenom
     ORDER BY nom DESC oredre décroissant
+
+### Fonctions d'aggrégations
+
+    SELECT COUNT(service) nbServices FROM employe
+Compte le nombre d'entrées non nulle de la colonne service, si (*) compte tout, y compris les lignes composé de NULL 
+
+    SELECT MIN(salaire) FROM employe
+    SELECT MAX(nom) FROM employe
+Fonctionne aussi bien sur les nombres que sur les chaines de caractères ou les dates
+
+    SELECT SUM(salaire) FROM employe
+
+Calcul de la moyenne :
+
+    SELECT SUM(salaire) / COUNT(*) FROM employe
+    SELECT AVG(salaire) FROM employe
     
+### Regroupements
+
+    SELECT sexe, AVG(salaire) moyenne FROM employe GROUP BY sexe
+Le group by doit étre utilisé sur une colonne selectionné + une fonction d'agrégation
+
+Where/Having
+WHERE agit en entrée, avant la création des alias, HAVING agit en sortie
+Having:
+
+    SELECT service, AVG(salaire) moyenne
+    FROM employe
+    GROUP BY service
+    HAVING moyenne > 1000
+
+WHERE + HAVING :
+
+    SELECT service, AVG(salaire) moyenne FROM employe WHERE salaire > 12000 GROUP BY service HAVING moyenne > 15000
+
+Ordre des clauses :
+
+    SELECT FROM
+    WHERE
+    GROUP BY
+    HAVING
+    ORDER BY
+    LIMIT
+
+
