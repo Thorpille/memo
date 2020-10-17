@@ -107,4 +107,16 @@ Ordre des clauses :
     ORDER BY
     LIMIT
 
+Jointures :
+Jointure interne ( ne selectionne que ceux qui ont une correspondance)
+
+    SELECT employe.nom, employe.prenom, service.nom FROM employe, service WHERE employe.idService = service.idSevice
+    SELECT employe.nom, employe.prenom, service.nom FROM employe JOIN service ON employe.idService = service.idService
+    SELECT employe.nom, employe.prenom, service.nom FROM employe JOIN service USING(idService) //Si les deux clés sont les memes
+    SELECT employe.nom, employe.prenom, service.nom FROM employe NATURAL JOIN service //Si les deux clés sont les memes et qu'il n'y a pas d'autres clés identiques
+Dans les jointures internes, l'ordre des tables n'a aucune importance
+    
+Jointures externes :
+
+    
 
