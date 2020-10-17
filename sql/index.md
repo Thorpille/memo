@@ -118,5 +118,16 @@ Dans les jointures internes, l'ordre des tables n'a aucune importance
     
 Jointures externes :
 
-    
+    SELECT employe.nom, employe.prenom, service.nom FROM employe LEFT JOIN service USING(idService) // Déborde à gauche (sur la table employe)
 
+Avec alias de table : les alias sont créés au tout début du script, avant meme le SELECT
+
+    SELECT e.nom, e.prenom, s.nom FROM employe AS e LEFT JOIN service AS s USING(idService)
+    SELECT e.nom, e.prenom, s.nom FROM employe e LEFT JOIN service s USING(idService)
+    
+    SELECT CONCAT(e.nom, '', e.prenom) emp, s.nom serv, CONCAT(d.nom, ' ', d.prenom)dir
+    FROM employe e
+    LEFT JOIN service s
+    USING(idService)
+    LEFT JOIN directeur d
+    USING (idDirecteur)
