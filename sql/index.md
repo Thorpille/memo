@@ -139,4 +139,57 @@ Les jointures réflexives :
     JOIN employe e2
     ON e1.idDirecteur = e2.idEmploye
     
-Les sous-requêtes :
+### Les sous-requêtes :
+
+    SELECT nom, prenom, salaire
+    FROM employe
+    HAVING salaire > (
+        SELECT AVG(salaire) FROM employe        
+    )
+La meme chose avec une jointure reflexive :
+
+    SELECT e1.nom, e1.prenom, e1.salaire
+    FROM employe e1
+    JOIN employe e2
+    GROUP BY e1.nom
+    HAVING e1.salaire > AVG(e2.salaire)
+    
+Une jointure reflexive peut presque toujours remplacer une sous requete
+
+Sous requetes possible dans un IN :
+
+    SELECT nom
+    FROM employe
+    WHERE prenom IN (
+        SELECT prenom FROM directeur
+    )
+Dans un FROM :
+
+    SELECT nomComplet FROM (
+        SELECT CONCAT(prenom, ' ', nom) nomComplet FROM directeur
+    ) d
+Obligation d'aliaser une table d'ou le "d"
+
+Dans un JOIN :
+
+    SELECT e.nom, e.prenom
+    FROM employe e
+    JOIN(
+        SELECT * FROM service
+    ) s
+    USING(idService)
+    WHERE s.nom = 'Marketing'
+    
+### Les unions de requetes
+    
+    SELECT nom, prenom FROM employe
+    UNION
+    SELECT nom, prenom FROM directeur
+    ORDER BY nom, prenom
+    
+Les SELECT doivent selectionner le meme nombre de colonne
+Un seul ORDER BY à la fin
+ORDER BY uniquement sur colonne de la première requète
+Les doublons sont éliminés avec UNION, pas avec UNION ALL
+
+
