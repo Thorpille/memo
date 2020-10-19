@@ -131,3 +131,12 @@ Avec alias de table : les alias sont créés au tout début du script, avant mem
     USING(idService)
     LEFT JOIN directeur d
     USING (idDirecteur)
+
+Les jointures réflexives :
+
+    SELECT CONCAT(e1.nom, ' ', e1.prenom) emp, CONCAT(e2.nom, ' ', e2.prenom)dir
+    FROM employe e1
+    JOIN employe e2
+    ON e1.idDirecteur = e2.idEmploye
+    
+Les sous-requêtes :
