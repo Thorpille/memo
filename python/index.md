@@ -6,3 +6,5 @@
 * [Les listes](listes.md)
 * [Les dictionnaires](dictionnaires.md)
 * [Conditions](conditions.md)
+
+https://docs.python.org/fr/3/library/index.html
