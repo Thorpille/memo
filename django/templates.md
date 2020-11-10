@@ -1,7 +1,7 @@
 # Templates
 
 ### Sytaxe de  base
-{% highlight python %}{% raw %}
+{% highlight liquid %}{% raw %}
 {{ ma_variable }}
 {# mon commentaire #} ou {% comment %} Commentaire sur lignes {% endcomment %}
 Pour accédes à la première valeur de la clé d'un dictionnaire : {{ picture.categories.0 }}
@@ -11,14 +11,14 @@ Pour accédes à la première valeur de la clé d'un dictionnaire : {{ picture.c
 ### Tags et filtres :
 
 #### Tags:
-{% highlight python %}{% raw %}
+{% highlight liquid %}
 {% if condition %} ... {% endif %}  
 {% for i in truc %} ... {% endfor %}  
     print('rt')  
-{% endraw %}{% endhighlight %}
+{% endhighlight %}
 
 #### Pour basculer d'une valeur à l'autre à chaque appel :
-{% highlight python %}{% raw %}
+{% highlight liquid %}{% raw %}
 {% cycle '#80e27e' '#087f23' as rowcolors %}
 {% cycle rowcolors %}
 {{ rowcolors }} pour récupérer la dernière valeur utilisée
@@ -26,7 +26,7 @@ Pour accédes à la première valeur de la clé d'un dictionnaire : {{ picture.c
 
 
 #### Filtres:
-{% highlight python %}{% raw %}
+{% highlight liquid %}{% raw %}
 {{ name|length }}
 {{ name|default:"Empty"}}
 {{ name|lower|truncatewords:5 }}
