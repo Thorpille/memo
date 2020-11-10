@@ -10,7 +10,7 @@
     
 ### Tags et filtres :
 #### Tags:
-{% highlight ruby %}  
+{% highlight python %}  
 {% if condition %} ... {% endif %}  
 {% for i in truc %} ... {% endfor %}  
 print('rt')  
