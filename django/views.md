@@ -6,7 +6,7 @@
       return HttpResponse(body)
   
 ### Réponse avec loader de template
-    def git(request):
+    def ma_view(request):
       context = {'param1': 2020,
                  'string': 'bla bla bla'}
       template = loader.get_template('monapp/template.html')
