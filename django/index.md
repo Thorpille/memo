@@ -6,3 +6,4 @@
 * [models.py](models.md)
 * [forms.py](forms.md)
 * [commande manage.py](manage.md)
+* [Infos diverses](divers.md)
