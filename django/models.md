@@ -11,7 +11,7 @@ Class song(models.Model)
 
 Chaque attribut doit étre déterminé par ses caractéristiques:
 {% highlight python %}
-name = models.Charfield(max_length = 255, default='No Name)
+name = models.Charfield(max_length = 255, default='No Name')
 duration = models.IntegerField(default=0, help_text="Duration in seconds")
 lyrics = models.TextField(blank=True)
 {% endhighlight %}
@@ -43,7 +43,7 @@ Pour itérer sur les lignes :
 {% highlight python %}
 for s in Song.objects.all():
   print(s.name)
-song.objects.filter(duration__gt=200)     Greater Than
+song.objects.filter(duration__gt=200)#     Greater Than
 song.objects.exclude(lyrics__exact='')
 song.object.exclude(lyrics__exact='').filter(duration__gt=200)
 
