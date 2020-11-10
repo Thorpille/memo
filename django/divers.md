@@ -1,3 +1,4 @@
+### [Django](index.html)
 # Infos diverses
 
 apps.py => config de l'app pour le projet
