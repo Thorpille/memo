@@ -11,9 +11,11 @@
 ### Tags et filtres :
 #### Tags:
 {% highlight python %}  
+{% raw %}
 {% if condition %} ... {% endif %}  
 {% for i in truc %} ... {% endfor %}  
 print('rt')  
+{% endraw %}  
 {% endhighlight %}
 
 #### Pour basculer d'une valeur à l'autre à chaque appel :
