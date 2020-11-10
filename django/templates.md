@@ -10,8 +10,12 @@
     
 ### Tags et filtres :
 #### Tags:
-    /{% if condition %} ... {% endif %}
-    {% for i in truc %} ... {% endfor %}
+{% highlight ruby %}  
+{% if condition %} ... {% endif %}  
+{% for i in truc %} ... {% endfor %}  
+print('rt')  
+{% endhighlight %}
+
 #### Pour basculer d'une valeur à l'autre à chaque appel :
     {% cycle '#80e27e' '#087f23' as rowcolors %}
     {% cycle rowcolors %}
