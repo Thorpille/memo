@@ -21,6 +21,6 @@ Importer la views et gérer l'URL dans le urls.py du projet
 ### Lancer le serveur :
 {% highlight Batchfile %}
 python manage.py runserver
-{ % endhighlight %}
+{% endhighlight %}
 
 ### Créer un superuser
