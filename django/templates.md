@@ -11,11 +11,11 @@ Pour accédes à la première valeur de la clé d'un dictionnaire : {{ picture.c
 ### Tags et filtres :
 
 #### Tags:
-{% highlight liquid %}
+{% highlight liquid %}{% raw %}
 {% if condition %} ... {% endif %}  
 {% for i in truc %} ... {% endfor %}  
     print('rt')  
-{% endhighlight %}
+{% endraw %}{% endhighlight %}
 
 #### Pour basculer d'une valeur à l'autre à chaque appel :
 {% highlight liquid %}{% raw %}
