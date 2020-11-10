@@ -2,8 +2,8 @@
 
 ### Ajout suppression d'éléments :
 {% highlight python %}
-ma_liste = [1, 2, 3]           Déclaration + affectation
-ma_liste.append(ma_var_a_ajouter)         ajout d'une seule valeur
+ma_liste = [1, 2, 3]#           Déclaration + affectation
+ma_liste.append(ma_var_a_ajouter)         #ajout d'une seule valeur
 ma_liste.extend([1, 2, 3])           ajout plusieurs valeurs sous forme d'une liste
 ma_liste.remove(ma_var_a_sup)                    Enlève la première occurrence de l'élément indiqué
 ma_liste.pop(-1)    Enlève le dernier élément, renvoie le contenu de l'élément enlevé
