@@ -5,7 +5,7 @@
       body = f"Premier paramètre = {param1}, deuxième paramètre = {param2}"
       return HttpResponse(body)
   
-  ### Réponse avec loader de template
+### Réponse avec loader de template
     def git(request):
       context = {'param1': 2020,
                  'string': 'bla bla bla'}
