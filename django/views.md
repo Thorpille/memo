@@ -1,4 +1,4 @@
-### [Python](index.html)
+### [Django](index.html)
 # Views.py
 
 ### Réponse HTTP basique :
