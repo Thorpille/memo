@@ -3,9 +3,10 @@
 ### Fichier .json
 
 Lecture :
-
-    with open(chemin, "r") as f:
-        contenu = json.load(f)
+{% highlight python %}
+with open(chemin, "r") as f:
+contenu = json.load(f)
+{% endhighlight %}
 
 Ecriture :
 
