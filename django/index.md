@@ -5,3 +5,4 @@
 * [templates](template.md)
 * [models.py](models.md)
 * [forms.py](forms.md)
+* [commande manage.py](manage.md)
