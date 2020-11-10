@@ -5,13 +5,13 @@
 {% highlight Batchfile %}
 pip install Django  
 django-admin startproject monprojet .       // le point sert à ne pas créer de sous dossier
-{ % endhighlight %}
+{% endhighlight %}
 
 
 ### Création d'une app
 {% highlight Batchfile %}
 python manage.py startapp <mon_app>
-{ % endhighlight %}
+{% endhighlight %}
 
 Dans settings, l'ajouter dans les apps installés.  
 Ajouter la fonction dans le views.py de l'app.  
