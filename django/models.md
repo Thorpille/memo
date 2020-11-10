@@ -16,7 +16,7 @@ duration = models.IntegerField(default=0, help_text="Duration in seconds")
 lyrics = models.TextField(blank=True)
 {% endhighlight %}
 
-Si une colonne id ou pk(primary key) n'est pas défini, Django en cré automatiquement une
+Si une colonne id ou pk(primary key) n'est pas défini, Django en crée automatiquement une
 
 
 Pour enregistrer des données :
