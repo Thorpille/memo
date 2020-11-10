@@ -29,7 +29,7 @@ song.save()
 
 Pour ajouter juste une valeur:
 {% highlight python %}
-Song.lyrics = "Mes paroles"
+song.lyrics = "Mes paroles"
 {% endhighlight %}
 
 Pour faire des requétes :
