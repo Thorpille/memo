@@ -10,7 +10,7 @@
     
 ### Tags et filtres :
 #### Tags:
-    {% if condition %} ... {% endif %}
+    /{% if condition %} ... {% endif %}
     {% for i in truc %} ... {% endfor %}
 #### Pour basculer d'une valeur à l'autre à chaque appel :
     {% cycle '#80e27e' '#087f23' as rowcolors %}
