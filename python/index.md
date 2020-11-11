@@ -9,4 +9,8 @@
 * [Boucles](boucles.md)
 * [Strings](strings.md)
 * [Fonctions](fonctions.md)
+
+
+
+Quelques liens :
 https://docs.python.org/fr/3/library/index.html
