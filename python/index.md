@@ -6,5 +6,6 @@
 * [Les listes](listes.md)
 * [Les dictionnaires](dictionnaires.md)
 * [Conditions](conditions.md)
+* [Boucles](boucles.md)
 
 https://docs.python.org/fr/3/library/index.html
