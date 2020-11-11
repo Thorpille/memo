@@ -7,3 +7,7 @@
 * [forms.py](forms.md)
 * [commande manage.py](manage.md)
 * [Infos diverses](divers.md)
+
+Quelques liens :
+https://docs.djangoproject.com/fr/3.1/
+https://djangopackages.org/categories/apps/
