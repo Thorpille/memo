@@ -52,3 +52,11 @@ liste = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
 nombre_positifs = [i for i in liste if i > 0]
 nombre_positifs_fois_deux = [i * 2 for i in liste if i > 0]
 {% endhighlight %}
+
+### Tupple
+
+Découpe le tupple dans plusieurs variable, l'underscore peut servir à ignorer une valeur
+{% highlight python %}
+mon_tupple = (Bonjour, vous, coucou)
+var1, var2, _ = mon_tupple
+{% endhighlight %}
