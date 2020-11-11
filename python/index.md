@@ -7,6 +7,6 @@
 * [Les dictionnaires](dictionnaires.md)
 * [Conditions](conditions.md)
 * [Boucles](boucles.md)
-* [strings](strings.md)
-
+* [Strings](strings.md)
+* [Fonctions](fonctions.md)
 https://docs.python.org/fr/3/library/index.html
