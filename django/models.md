@@ -1,7 +1,7 @@
 ### [Django](index.html)
 ### Models.py
 
-Une Class = une table
+Une Class = une table  
 Un attribut = une colonne
 
 Chaque class hérite de models.Model :
