@@ -5,6 +5,7 @@
 * [templates](templates.md)
 * [models.py](models.md)
 * [forms.py](forms.md)
+* [admin](admin.md)
 * [commande manage.py](manage.md)
 * [Infos diverses](divers.md)
 
