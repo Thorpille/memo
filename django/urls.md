@@ -21,3 +21,15 @@ urlpatterns = [
 {% highlight python %}
 path('mon_app/<str:string_arg>/<int:int_arg>/', views.ma_fonction)
 {% endhighlight %}
+
+### Pour récupérer une url via son nom (reverse url):
+Lui donner un nom dans urls.py :
+{% highlight python %}
+urlpatterns = [
+    path('users/<str:name>/detail', views.users_detail, name='modele-users-details'),
+]
+{% endhighlight %}
+L'appeller avec eventuellement un ou des paramètres dans le template :
+{% highlight python %}
+<a href="{% url 'modele-users-details' modele %}">{{ infos.name|title }}</a>
+{% endhighlight %}
