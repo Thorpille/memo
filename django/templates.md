@@ -44,7 +44,7 @@ Pour inclure un template dans un autre template :
 {% highlight liquid %}{% raw %}
 {% include "peoplebook/block_user_details.html %}
 {% endraw %}{% endhighlight %}
-
+Toutes les variables accessibles dans le template sont aussi accessible dans le template appelé
 
 
 
