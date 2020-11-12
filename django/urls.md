@@ -30,6 +30,6 @@ urlpatterns = [
 ]
 {% endhighlight %}
 L'appeller avec eventuellement un ou des paramètres dans le template :
-{% highlight python %}
+{% highlight python %}{% raw %}
 <a href="{% url 'modele-users-details' modele %}">{{ infos.name|title }}</a>
-{% endhighlight %}
+{% endraw %}{% endhighlight %}
