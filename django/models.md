@@ -23,7 +23,7 @@ Pour enregistrer des données :
 
 {% highlight python %}
 from appone.models import Song
-song = Song(name = 'Nuages', duration='211', lyrics='')
+	song = Song(name = 'Nuages', duration='211', lyrics='')
 {% endhighlight %}
 
 Pour ajouter juste une valeur:
@@ -45,14 +45,23 @@ Song.objects.all()
 
 Pour itérer sur les lignes :
 {% highlight python %}
-for s in Song.objects.all():
+for s in MaTable.objects.all():
   print(s.name)
-song.objects.filter(duration__gt=200)#     Greater Than
-song.objects.exclude(lyrics__exact='')
-song.objects.exclude(lyrics__exact='').filter(duration__gt=200)
+song.objects.filter(un_nombre__gt=10)#     Greater Than
+song.objects.exclude(ma_string__exact='truc')
+song.objects.exclude(ma_string__exact='truc').filter(un_nombre__gt=200)
 
-for s in song.object.exclude(lyrics__exact='').filter(duration__gt=200):
+for s in MaTable.object.exclude(ma_string__exact='truc').filter(un_nombre__gt=10):
 	s.delete()
 {% endhighlight %}
 
-Les clés étrangères (foreign keys)
+Les types de valeurs :
+{% highlight python %}
+models.CharField(max_length=255)
+models.IntegerField(default=0, help_text='Duration in seconds')
+models.TextField(blank=True)
+
+
+{% endhighlight %}
+
+
