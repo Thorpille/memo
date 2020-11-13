@@ -24,12 +24,16 @@ Pour enregistrer des données :
 {% highlight python %}
 from appone.models import Song
 song = Song(name = 'Nuages', duration='211', lyrics='')
-song.save()
 {% endhighlight %}
 
 Pour ajouter juste une valeur:
 {% highlight python %}
 song.lyrics = "Mes paroles"
+{% endhighlight %}
+
+Pour sauvegarder :
+{% highlight python %}
+song.save()
 {% endhighlight %}
 
 Pour faire des requétes :
@@ -45,7 +49,7 @@ for s in Song.objects.all():
   print(s.name)
 song.objects.filter(duration__gt=200)#     Greater Than
 song.objects.exclude(lyrics__exact='')
-song.object.exclude(lyrics__exact='').filter(duration__gt=200)
+song.objects.exclude(lyrics__exact='').filter(duration__gt=200)
 
 for s in song.object.exclude(lyrics__exact='').filter(duration__gt=200):
 	s.delete()
