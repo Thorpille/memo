@@ -16,3 +16,25 @@ context = {'param1': 2020,
 template = loader.get_template('monapp/template.html')
 return HttpResponse(template.render(context, request))
 {% endhighlight %}
+
+### Utiliser les models dans les views
+
+from appone.model import Song
+
+ # Lecture :
+
+def song_list(request):
+ names =  [] 
+for s in Song.objects.all():
+	names.append(s.name)
+	
+body = '<br/>.join(names)
+return HttpResponse(body)
+
+# Ecriture :
+def songs_add(request, song_name, duration):
+	song = Song(name=song_name, duration=duration
+	song.save()
+	return HttpResponse("Enregistrement OK")
+    
+   
