@@ -19,22 +19,23 @@ return HttpResponse(template.render(context, request))
 
 ### Utiliser les models dans les views
 
-from appone.model import Song
+{% highlight python %}from monapp.model import MaTable{% endhighlight %}
 
  # Lecture :
-
-def song_list(request):
- names =  [] 
-for s in Song.objects.all():
-	names.append(s.name)
+{% highlight python %}
+def lecture(request):
+liste =  [] 
+for m in MaTable.objects.all():
+	names.append(s.nom)
 	
-body = '<br/>.join(names)
+body = '<br/>.join(liste)
 return HttpResponse(body)
-
+{% endhighlight %}
 # Ecriture :
-def songs_add(request, song_name, duration):
-	song = Song(name=song_name, duration=duration
-	song.save()
+{% highlight python %}
+def ecriture(request, nom, prenom):
+	membre = MaTable(nom=nom, prenom=prenom)
+	membre.save()
 	return HttpResponse("Enregistrement OK")
-    
+{% endhighlight %}  
    
