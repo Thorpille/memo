@@ -1,6 +1,8 @@
 ### [Django](index.html)
 # Views.py
 
+## Les basiques :
+
 ### Réponse HTTP basique :
 {% highlight python %}
 def ma_view(request, param1, param2=0):
@@ -26,9 +28,9 @@ return HttpResponse(template.render(context, request))
 def lecture(request):
 	liste =  [] 
 	for m in MaTable.objects.all():
-		names.append(s.nom)
+		names.append(m.nom)
 	
-body = '<br/>.join(liste)
+body = '<br/>'.join(liste)
 return HttpResponse(body)
 {% endhighlight %}
 ### Ecriture :
