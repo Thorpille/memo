@@ -17,21 +17,21 @@ template = loader.get_template('monapp/template.html')
 return HttpResponse(template.render(context, request))
 {% endhighlight %}
 
-### Utiliser les models dans les views
+## Utiliser les models dans les views
 
 {% highlight python %}from monapp.model import MaTable{% endhighlight %}
 
- # Lecture :
+### Lecture :
 {% highlight python %}
 def lecture(request):
-liste =  [] 
-for m in MaTable.objects.all():
-	names.append(s.nom)
+	liste =  [] 
+	for m in MaTable.objects.all():
+		names.append(s.nom)
 	
 body = '<br/>.join(liste)
 return HttpResponse(body)
 {% endhighlight %}
-# Ecriture :
+### Ecriture :
 {% highlight python %}
 def ecriture(request, nom, prenom):
 	membre = MaTable(nom=nom, prenom=prenom)
