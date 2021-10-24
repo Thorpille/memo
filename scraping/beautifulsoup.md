@@ -33,3 +33,26 @@ pardes_page.select("h1 a"){% endhighlight %} selectionne le sous élément a pr�
 parsed_page.select(".tag")
 parsed_page.select("a[href='/tag/be-yourself/page/1/']")
 {% endhighlight %}
+
+## Naviguer dans le dom
+liste les élément contenu dans la sélection :
+first_quote.contents
+pour récupérer la tatalité de  l'élément parent :
+first_quote.parent
+Pour récupérer les attributs du parents
+first_quote.parent.attrs
+.previous_sibling renvoi l'élément précédent au même niveau
+.next_sibling renvoi l'élément suivant au même niveau
+
+## Export
+{% highlight python %}
+with open('mon_chemin/mon_fichier.json', 'w')as f:
+            json.dump(ma_liste, f)
+            
+import pandas as pd
+data_pd = pd.DataFrame.from_dict(ma_liste)
+
+
+data_pd.to_json('monchemin.json')
+data_pd.to_csv('monchemin.csv')
+{% endhighlight %}
