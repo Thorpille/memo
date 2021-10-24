@@ -1,5 +1,5 @@
 # Index
-* [Scraping](scraping.md)
+* [Scraping](scraping/index.md)
 * [Python](python/index.md)
 * [C++](c++/index.md)
 * [Javascript](javascript/index.md)
