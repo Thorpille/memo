@@ -17,7 +17,7 @@ if page.status_code == 200:
 parsed_page.title
 parsed_page.h1.name
 parsed_page.find('li', {'class':'next'})
-parsed_page.find_all('a)
+parsed_page.find_all('a')
 top_ten_tags = parsed_page.find('div',{'class':'col-md-4 tags-box'}).find_all('a',{'class':'tag'})
 {% endhighlight %}
 
